@@ -1,0 +1,247 @@
+[
+  {
+    "id": "SOP-SYS-001",
+    "category": "override",
+    "activity_patterns": ["*"],
+    "severity": "CRITICAL",
+    "conditions": {
+      "precipitation_min": 50,
+      "wind_speed_10m_min": 65,
+      "operator": "OR"
+    },
+    "guidance": "Severe systemic weather detected. All outdoor activities are highly dangerous. Shelter in place.",
+    "citation": "Severe Weather Override Policy"
+  },
+  {
+    "id": "SOP-EXER-001",
+    "category": "exercise",
+    "activity_patterns": ["run", "jog", "exercise", "workout", "outdoor"],
+    "severity": "HIGH",
+    "conditions": {
+      "uv_index_min": 8
+    },
+    "guidance": "Advise against unprotected outdoor exercise due to high UV. Recommend sunscreen and rescheduling to early morning or evening.",
+    "citation": "High UV Exercise Policy"
+  },
+  {
+    "id": "SOP-EXER-002",
+    "category": "exercise",
+    "activity_patterns": ["cycle", "bike", "biking", "cycling", "two-wheeler", "pedal"],
+    "severity": "HIGH",
+    "conditions": {
+      "wind_speed_10m_min": 40
+    },
+    "guidance": "High winds pose a severe safety risk for two-wheelers. Avoid cycling.",
+    "citation": "Two-Wheeler Wind Safety Policy"
+  },
+  {
+    "id": "SOP-TRVL-001",
+    "category": "travel",
+    "activity_patterns": ["travel", "drive", "fly", "commute", "road trip", "car"],
+    "severity": "MODERATE",
+    "conditions": {
+      "precipitation_min": 5
+    },
+    "guidance": "Moderate precipitation detected. Warn of possible travel delays and reduced visibility.",
+    "citation": "Precipitation Travel Delay Policy"
+  },
+  {
+    "id": "SOP-VULN-001",
+    "category": "vulnerable_groups",
+    "activity_patterns": ["kid", "child", "infant", "toddler", "park", "baby"],
+    "severity": "MODERATE",
+    "conditions": {
+      "temperature_2m_max": 10
+    },
+    "guidance": "Temperatures are quite low for young children. Ensure they are bundled up with appropriate winter wear.",
+    "citation": "Cold Weather Child Safety Policy"
+  },
+  {
+    "id": "SOP-VULN-002",
+    "category": "vulnerable_groups",
+    "activity_patterns": ["elderly", "senior", "parent"],
+    "severity": "HIGH",
+    "conditions": {
+      "temperature_2m_min": 35
+    },
+    "guidance": "Extreme heat poses severe risks to elderly individuals. Advise staying indoors with AC and staying hydrated.",
+    "citation": "Extreme Heat Elderly Policy"
+  },
+  {
+    "id": "SOP-VULN-003",
+    "category": "vulnerable_groups",
+    "activity_patterns": ["pet", "dog", "walk", "cat"],
+    "severity": "HIGH",
+    "conditions": {
+      "temperature_2m_min": 32
+    },
+    "guidance": "Pavement can be dangerously hot for pets' paws at these temperatures. Avoid walking dogs during peak heat.",
+    "citation": "Pet Heat Safety Policy"
+  },
+  {
+    "id": "SOP-FUZZ-001",
+    "category": "leisure",
+    "activity_patterns": ["picnic", "relax", "read", "park", "meal", "blanket"],
+    "severity": "LOW",
+    "conditions": {
+      "temperature_2m_min": 18,
+      "temperature_2m_max": 28,
+      "wind_speed_10m_max": 15,
+      "precipitation_max": 0,
+      "fuzzy_composite": true
+    },
+    "guidance": "Conditions are ideal and comfortable for outdoor leisure. It's a great day to be outside!",
+    "citation": "Outdoor Leisure Comfort Policy"
+  },
+  {
+    "id": "SOP-EXER-003",
+    "category": "exercise",
+    "activity_patterns": ["swim", "beach", "pool"],
+    "severity": "CRITICAL",
+    "conditions": {
+      "uv_index_min": 10
+    },
+    "guidance": "Extreme UV levels detected. Swimming without heavy sun protection is highly dangerous. Avoid sun exposure.",
+    "citation": "Extreme UV Water Sports Policy"
+  },
+  {
+    "id": "SOP-EXER-004",
+    "category": "exercise",
+    "activity_patterns": ["hik", "trek", "mountain"],
+    "severity": "HIGH",
+    "conditions": {
+      "precipitation_min": 5,
+      "wind_speed_10m_min": 30
+    },
+    "guidance": "Combination of rain and high wind makes trails slippery and unsafe. Reschedule the hike.",
+    "citation": "Hiking Trail Safety Policy"
+  },
+  {
+    "id": "SOP-TRVL-002",
+    "category": "travel",
+    "activity_patterns": ["drive", "car", "road trip"],
+    "severity": "HIGH",
+    "conditions": {
+      "precipitation_min": 20
+    },
+    "guidance": "Heavy rain severely reduces visibility and increases hydroplaning risk. Avoid non-essential driving.",
+    "citation": "Heavy Rain Driving Policy"
+  },
+  {
+    "id": "SOP-LEIS-002",
+    "category": "leisure",
+    "activity_patterns": ["stargaz", "astronomy", "telescope"],
+    "severity": "MODERATE",
+    "conditions": {
+      "cloud_cover_min": 70
+    },
+    "guidance": "High cloud cover will heavily obscure the sky, making stargazing difficult. Consider rescheduling.",
+    "citation": "Visibility & Cloud Cover Policy"
+  },
+  {
+    "id": "SOP-EXER-005",
+    "category": "exercise",
+    "activity_patterns": ["ski", "snowboard", "snow"],
+    "severity": "HIGH",
+    "conditions": {
+      "temperature_2m_max": -15,
+      "wind_speed_10m_min": 20
+    },
+    "guidance": "Extreme wind chill and freezing temperatures drastically increase the risk of frostbite. Ensure heavy thermal layers and limit exposure time.",
+    "citation": "Winter Sports Extreme Cold Policy"
+  },
+  {
+    "id": "SOP-LEIS-003",
+    "category": "leisure",
+    "activity_patterns": ["photography", "photo", "drone", "shoot"],
+    "severity": "HIGH",
+    "conditions": {
+      "wind_speed_10m_min": 35
+    },
+    "guidance": "High winds can destabilize tripods and cause drones to fly away or crash. Ground all aerial equipment.",
+    "citation": "Aerial Equipment Wind Safety Policy"
+  },
+  {
+    "id": "SOP-EXER-006",
+    "category": "exercise",
+    "activity_patterns": ["run", "jog", "marathon"],
+    "severity": "HIGH",
+    "conditions": {
+      "temperature_2m_min": 30,
+      "relative_humidity_2m_min": 75
+    },
+    "guidance": "High heat combined with high humidity severely limits the body's ability to cool down through sweat. Risk of heatstroke is high. Avoid strenuous running.",
+    "citation": "Heat Index/Humidity Exercise Policy"
+  },
+  {
+    "id": "SOP-LEIS-004",
+    "category": "leisure",
+    "activity_patterns": ["camp", "tent"],
+    "severity": "CRITICAL",
+    "conditions": {
+      "wind_speed_10m_min": 50
+    },
+    "guidance": "Gale-force winds can easily uproot tents and blow large debris. Outdoor camping is highly dangerous under these conditions.",
+    "citation": "Camping Wind Hazard Policy"
+  },
+  {
+    "id": "SOP-VULN-004",
+    "category": "vulnerable_groups",
+    "activity_patterns": ["asthma", "breathing", "elderly"],
+    "severity": "MODERATE",
+    "conditions": {
+      "relative_humidity_2m_max": 20,
+      "temperature_2m_min": 25
+    },
+    "guidance": "Very dry and warm air can exacerbate respiratory issues. Carry inhalers and stay hydrated.",
+    "citation": "Dry Air Respiratory Policy"
+  },
+  {
+    "id": "SOP-TRVL-003",
+    "category": "travel",
+    "activity_patterns": ["boat", "sail", "kayak", "watercraft"],
+    "severity": "HIGH",
+    "conditions": {
+      "wind_speed_10m_min": 25
+    },
+    "guidance": "Elevated winds can cause choppy waters and dangerous currents for small watercraft. Exercise extreme caution or stay off the water.",
+    "citation": "Small Watercraft Wind Policy"
+  },
+  {
+    "id": "SOP-TRVL-004",
+    "category": "travel",
+    "activity_patterns": ["motorcycle", "scooter", "moped"],
+    "severity": "CRITICAL",
+    "conditions": {
+      "precipitation_min": 15,
+      "wind_speed_10m_min": 45
+    },
+    "guidance": "Heavy rain and strong crosswinds make riding motorized two-wheeled vehicles extremely hazardous. Do not ride.",
+    "citation": "Motorcycle Storm Safety Policy"
+  },
+  {
+    "id": "SOP-LEIS-005",
+    "category": "leisure",
+    "activity_patterns": ["fish", "fishing"],
+    "severity": "HIGH",
+    "conditions": {
+      "precipitation_min": 10
+    },
+    "guidance": "Heavy precipitation can cause sudden changes in water levels and slippery riverbanks. Avoid fishing during heavy rain.",
+    "citation": "Fishing Rain Safety Policy"
+  },
+  {
+    "id": "SOP-LEIS-006",
+    "category": "leisure",
+    "activity_patterns": ["garden", "planting", "yard", "lawn"],
+    "severity": "LOW",
+    "conditions": {
+      "temperature_2m_min": 15,
+      "temperature_2m_max": 25,
+      "precipitation_max": 0,
+      "fuzzy_composite": true
+    },
+    "guidance": "Conditions are excellent for gardening and yard work. Enjoy the mild, dry weather!",
+    "citation": "Gardening Comfort Policy"
+  }
+]
