@@ -13,9 +13,14 @@ st.title("Weather-Advisory Support Bot")
 
 with st.sidebar:
     st.header("Settings")
-    api_key = st.text_input("Groq API Key", type="password", value=os.getenv("GROQ_API_KEY", ""))
-    if api_key:
-        os.environ["GROQ_API_KEY"] = api_key
+    env_key = os.getenv("GROQ_API_KEY", "")
+    if env_key:
+        st.success("✅ API Key securely loaded from environment")
+        api_key = env_key
+    else:
+        api_key = st.text_input("Groq API Key (If not in .env)", type="password")
+        if api_key:
+            os.environ["GROQ_API_KEY"] = api_key
         
     try:
         with open("sops.json", "r") as f:

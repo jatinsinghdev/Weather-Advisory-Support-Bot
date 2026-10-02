@@ -243,5 +243,34 @@
     },
     "guidance": "Conditions are excellent for gardening and yard work. Enjoy the mild, dry weather!",
     "citation": "Gardening Comfort Policy"
+  },
+  {
+    "id": "SOP-EXER-007",
+    "category": "exercise",
+    "activity_patterns": ["run", "jog", "exercise", "workout", "outdoor"],
+    "severity": "LOW",
+    "conditions": {
+      "temperature_2m_min": 5,
+      "temperature_2m_max": 29.9,
+      "precipitation_max": 2,
+      "uv_index_max": 7,
+      "fuzzy_composite": true
+    },
+    "guidance": "Weather conditions are safe and comfortable for running and outdoor exercise. Stay hydrated and enjoy your workout!",
+    "citation": "Optimal Exercise Comfort Policy"
+  },
+  {
+    "id": "SOP-EXER-008",
+    "category": "exercise",
+    "activity_patterns": ["run", "jog", "exercise", "workout", "outdoor"],
+    "severity": "MODERATE",
+    "conditions": {
+      "temperature_2m_min": 30,
+      "temperature_2m_max": 36,
+      "relative_humidity_2m_max": 74.9,
+      "fuzzy_composite": true
+    },
+    "guidance": "It is quite warm outside. Running is safe, but pace yourself, bring extra water, and consider taking breaks in the shade.",
+    "citation": "Warm Weather Exercise Policy"
   }
 ]
